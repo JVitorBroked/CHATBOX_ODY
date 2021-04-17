@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>Oi</pattern>
+        <template>
+            <random>
+                <li>Ola, em que posso ajudar</li>    
+                <li>Oi, que dia lindo</li>
+                <li>Opa, oque gostaria de saber?</li>
+            </random>
+            </template>
+    </category>
+    
+    <category>
+        
+        <pattern> * bem * </pattern>
+        <template> Que bom, se quiser saber oque sei fazer, é só perguntar. </template>
+    </category>
+    
+    <category>
+        <pattern> * tudo bom </pattern>
+            <template><star/>, tudo bom e vc?</template>
+    </category>
+    
+    <category>
+        <pattern> oque voce sabe fazer </pattern>
+        <template> Bem, eu posso ajudar voce com:</template>
+    </category>
+    
+    <category>
+        <pattern> * cadastrar </pattern>
+        <template> Qual seu nome? </template>
+    </category>
+        
+    <category>
+        <pattern> * </pattern>
+        <that> Qual seu nome </that>
+        <template> 
+            Seu cadastro foi feito <set name="username"> <star/> </set>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern> * </pattern>
+        <template> Nao entendi oque voce quis dizer com "<star/>". </template>
+    </category>
+    
+    
+</aiml>
